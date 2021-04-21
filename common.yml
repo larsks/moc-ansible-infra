@@ -1,0 +1,6 @@
+- name: Common configuration
+  hosts: all
+  roles:
+    - moc_sshd
+    - root_authorized_keys
+    - moc_firewall

@@ -1,0 +1,2 @@
+fw_enabled_services:
+  - ssh_ratelimit

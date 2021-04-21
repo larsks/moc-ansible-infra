@@ -1,0 +1,6 @@
+fw_reload_mode: live
+fw_enabled_services:
+  - ssh_moc
+  - smtp
+  - imap
+  - web

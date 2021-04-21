@@ -1,0 +1,20 @@
+roles:
+  - name: moc_base
+    src: https://github.com/larsks/ansible-role-moc-base
+    version: master
+
+  - name: moc_firewall
+    src: https://github.com/larsks/ansible-role-moc-firewall
+    version: master
+
+  - name: moc_sshd
+    src: https://github.com/larsks/ansible-role-moc-sshd
+    version: master
+
+  - name: root_authorized_keys
+    src: https://github.com/larsks/ansible-role-root-authorized-keys
+    version: master
+
+  - name: systemd
+    src: https://github.com/larsks/ansible-role-systemd
+    version: master

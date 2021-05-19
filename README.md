@@ -23,6 +23,38 @@ ansible-galaxy install -r requirements.yml --role-path roles --force
 ...although it's better to use specific references (tags, commit ids,
 etc) in `requirements.yml`.
 
+## Running the playbooks
+
+You will first need to point Ansible at an inventory file. If you have
+checked [moc-inventory-prod][] into the parent of the current
+directory, you can set the `ANSIBLE_INVENTORY` environment variable
+like this:
+
+```
+export ANSIBLE_INVENTORY=../moc-inventory-prod
+```
+
+Once you've set `ANSIBLE_INVENTORY`, you can run the `site.yml`
+playbook:
+
+```
+ansible-playbook site.yml
+```
+
+You can limit execution to a specific host (or host group) using `-l`:
+
+```
+ansible-playbook site.yml -l example.massopen.cloud
+```
+
+You can limit execution to a specific role using tags (the `auto_tags`
+plugin generates tags for each role):
+
+```
+ansible-playbook site.yml -t moc_firewall
+```
+
+[moc-inventory-prod]: https://github.com/CCI-MOC/moc-inventory-prod/
 
 ## Directory structure
 

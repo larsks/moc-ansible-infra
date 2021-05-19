@@ -1,0 +1,3 @@
+fw_enabled_services: "{{ q('vars', *q('varnames', '^fw_enabled_services_')) | flatten }}"
+fw_enabled_services_global:
+  - allow_internal_nets

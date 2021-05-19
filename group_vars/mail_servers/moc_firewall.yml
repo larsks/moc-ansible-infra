@@ -1,5 +1,5 @@
 fw_reload_mode: live
-fw_enabled_services:
+fw_enabled_services_mailservers:
   - ssh_moc
   - smtp
   - imap

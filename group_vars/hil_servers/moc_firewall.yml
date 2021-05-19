@@ -1,2 +1,2 @@
-fw_enabled_services:
+fw_enabled_services_hil:
   - ssh_ratelimit

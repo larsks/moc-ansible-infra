@@ -9,7 +9,7 @@ in [requirements.yml](requirements.yml). You can install them like
 this:
 
 ```
-ansible-galaxy install -r requirements.yml --role-path roles
+ansible-galaxy install -r requirements.yml --roles-path roles
 ```
 
 If `version` in a requirement is set to `master`, Ansible can't tell
@@ -17,7 +17,7 @@ when there's been an update. You can force a re-install by adding the
 `--force` option...
 
 ```
-ansible-galaxy install -r requirements.yml --role-path roles --force
+ansible-galaxy install -r requirements.yml --roles-path roles --force
 ```
 
 ...although it's better to use specific references (tags, commit ids,

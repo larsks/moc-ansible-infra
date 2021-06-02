@@ -4,3 +4,4 @@ fw_enabled_services_mailservers:
   - smtp
   - imap
   - web
+  - domain

@@ -1,0 +1,3 @@
+ssh_local_config: |
+  AuthorizedKeysCommand /usr/bin/sss_ssh_authorizedkeys
+  AuthorizedKeysCommandUser nobody

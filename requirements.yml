@@ -4,7 +4,7 @@ roles:
       version: 1bae42b220
     - name: moc_firewall
       src: https://github.com/cci-moc/ansible-role-moc-firewall
-      version: ab2c7be182
+      version: 7260ac89e9
     - name: moc_sshd
       src: https://github.com/cci-moc/ansible-role-moc-sshd
       version: 3e65414e32

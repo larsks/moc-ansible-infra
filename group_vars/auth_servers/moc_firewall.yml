@@ -1,4 +1,5 @@
 fw_reload_mode: live
+fw_reload_post: systemctl restart docker
 fw_enabled_services_auth:
   - ssh_moc
   - web

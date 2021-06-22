@@ -1,0 +1,3 @@
+- hosts: mirror_servers
+  roles:
+    - repomirror

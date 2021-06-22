@@ -1,0 +1,4 @@
+fw_reload_mode: live
+fw_enabled_services_mirrors:
+  - ssh_moc
+  - web_moc

@@ -14,3 +14,12 @@ roles:
     - name: systemd
       src: https://github.com/cci-moc/ansible-role-systemd
       version: master
+    - name: repomirror
+      src: https://github.com/cci-moc/ansible-role-repomirror
+      version: master
+    - name: httpd
+      src: https://github.com/cci-moc/ansible-role-httpd
+      version: master
+    - name: podman
+      src: https://github.com/cci-moc/ansible-role-podman
+      version: master

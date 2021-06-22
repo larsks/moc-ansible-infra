@@ -4,3 +4,4 @@ fw_enabled_services_auth:
   - web
   - zabbix
   - mysql_local
+  - all_from_sso

@@ -1,0 +1,26 @@
+- hosts: localhost
+  vars:
+    moc_inventory_repo: https://github.com/cci-moc/moc-inventory-prod
+    moc_inventory_version: master
+    moc_playbooks_repo: https://github.com/cci-moc/moc-ansible-infra
+    moc_playbooks_version: master
+  tasks:
+    - name: check out inventory
+      git:
+        repo: "{{ moc_inventory_repo }}"
+        dest: "{{ ansible_user_dir }}/inventory"
+        version: "{{ moc_inventory_version }}"
+        force: true
+
+    - name: check out playbooks
+      git:
+        repo: "{{ moc_playbooks_repo }}"
+        dest: "{{ ansible_user_dir }}/playbooks"
+        version: "{{ moc_playbooks_version }}"
+        force: true
+
+    - name: install roles
+      command: >-
+        ansible-galaxy role install -r requirements.yml -p roles -f
+      args:
+        chdir: "{{ ansible_user_dir }}/playbooks"

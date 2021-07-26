@@ -1,16 +1,16 @@
 roles:
     - name: moc_base
       src: https://github.com/cci-moc/ansible-role-moc-base
-      version: 1bae42b220
+      version: master
     - name: moc_firewall
       src: https://github.com/cci-moc/ansible-role-moc-firewall
-      version: 70feb1e1c1
+      version: master
     - name: moc_sshd
       src: https://github.com/cci-moc/ansible-role-moc-sshd
-      version: 6dfc32cffa
+      version: master
     - name: root_authorized_keys
       src: https://github.com/cci-moc/ansible-role-root-authorized-keys
-      version: 2456e46a28
+      version: master
     - name: systemd
       src: https://github.com/cci-moc/ansible-role-systemd
-      version: f0a9fea177
+      version: master

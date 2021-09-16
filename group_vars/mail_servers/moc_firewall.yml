@@ -5,3 +5,4 @@ fw_enabled_services_mailservers:
   - imap
   - web
   - domain
+  - zabbix

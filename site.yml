@@ -2,3 +2,4 @@
 - import_playbook: mail_servers.yml
 - import_playbook: auth_servers.yml
 - import_playbook: hil_servers.yml
+- import_playbook: mirror_servers.yml

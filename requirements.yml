@@ -23,3 +23,6 @@ roles:
     - name: podman
       src: https://github.com/cci-moc/ansible-role-podman
       version: master
+    - name: mailman
+      src: https://github.com/cci-moc/ansible-role-mailman
+      version: master

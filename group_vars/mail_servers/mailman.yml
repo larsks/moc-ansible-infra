@@ -1,0 +1,4 @@
+mailman_prune_lists:
+  - rootmail
+  - cephalerts
+  - alerts
